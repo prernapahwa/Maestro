@@ -1,0 +1,15 @@
+appId: com.example.nudgetest_demoqa1
+# testing quiz when the user input wrong answers
+---
+- clearState
+- launchApp
+- tapOn: "User Identifier"
+- tapOn: "Track Quiz"
+- tapOn: "START QUIZ"
+- repeat:
+    times: 10
+    commands:
+      - tapOn:
+          point: "50%,63%"
+- assertVisible: "MY REWARDS"
+- assertTrue: "Quiz Completed"

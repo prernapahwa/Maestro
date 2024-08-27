@@ -1,0 +1,21 @@
+appId: com.example.nudgetest_demoqa1
+# testing quiz when the user input correct answers
+---
+- clearState
+- launchApp
+- tapOn: "User Identifier"
+- tapOn: "Track Quiz"
+- tapOn: "START QUIZ"
+- tapOn: "c) Paris"
+- tapOn: "b) Oxygen"
+- tapOn: "c) William Shakespeare"
+- tapOn: "c) Jupiter"
+- tapOn: "b) 1912"
+- tapOn: "c) 2"
+- tapOn: "c) Leonardo da Vinci"
+- tapOn: "b) Avocado"
+- tapOn: "b) Japan"
+- tapOn: "a) 0"
+- assertVisible: "10 of 10"
+- assertVisible: "MY REWARDS"
+- assertTrue: "Quiz Completed"

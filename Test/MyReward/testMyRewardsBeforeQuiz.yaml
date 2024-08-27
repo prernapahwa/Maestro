@@ -1,0 +1,13 @@
+appId: com.example.nudgetest_demoqa1
+---
+# testing My Rewards button before playing quiz
+- clearState
+- launchApp
+- tapOn: "User Identifier"
+- tapOn: "Track Quiz"
+- tapOn: "MY REWARDS"
+- tapOn: "BACK TO HOME"
+- assertVisible: "Nudge Stories"
+- tapOn: "Delete User"
+- pressKey: Home
+

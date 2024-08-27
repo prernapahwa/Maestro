@@ -1,0 +1,12 @@
+appId: com.example.nudgetest_demoqa1
+# testing quiz page is visible after clicking on Track Quiz
+---
+- clearState
+- launchApp
+- tapOn: "Track Story"
+- tapOn: "User Identifier"
+- tapOn: "Track Quiz"
+- assertVisible: "START QUIZ"
+- back
+- tapOn: "Delete User"
+- pressKey: Home

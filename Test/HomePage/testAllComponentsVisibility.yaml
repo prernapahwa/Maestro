@@ -1,0 +1,15 @@
+appId: com.example.nudgetest_demoqa1
+---
+# testing all components on the home page
+- clearState
+- launchApp
+- assertVisible:
+      id: "android:id/content"
+- assertVisible: "Nudge Stories"
+- assertVisible: "Track Story"
+- assertVisible: "User Identifier"
+- assertVisible: "Track Quiz"
+- assertVisible: "Delete User"
+- pressKey: Home
+
+

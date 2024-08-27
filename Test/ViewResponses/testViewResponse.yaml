@@ -1,0 +1,19 @@
+appId: com.example.nudgetest_demoqa1
+---
+#  testing view Responses button after playing quiz
+- runFlow:
+    file: ///Users/prerna/IdeaProjects/maestro/Test/Quiz/testQuizWon.yaml
+- tapOn: "BACK TO HOME"
+- tapOn: "Track Quiz"
+- tapOn: "VIEW RESPONSES"
+- repeat:
+    times: 10
+    commands:
+      - assertVisible: "Correct Answer is : "
+      - tapOn:
+          point: "94%,7%"
+- assertVisible: "MY REWARDS"
+- assertVisible: "BACK TO HOME"
+- tapOn: "BACK TO HOME"
+- tapOn: "Delete User"
+- pressKey: Home

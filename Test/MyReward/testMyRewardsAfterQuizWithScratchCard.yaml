@@ -1,0 +1,12 @@
+appId: com.example.nudgetest_demoqa1
+---
+#  testing My Rewards button after playing quiz with scratch card.
+- runFlow:
+    file: ///Users/prerna/IdeaProjects/maestro/Test/Quiz/testQuizWon.yaml
+- tapOn: "MY REWARDS"
+- assertNotVisible: "You haven't received any rewards yet.
+
+    Play the quiz to earn rewards!"
+- tapOn: "BACK TO HOME"
+- tapOn: "Delete User"
+- pressKey: Home
