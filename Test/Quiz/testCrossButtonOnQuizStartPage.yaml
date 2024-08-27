@@ -1,0 +1,14 @@
+appId: com.example.nudgetest_demoqa1
+# testing cross button on quiz page
+---
+- clearState
+- launchApp
+- tapOn: "User Identifier"
+- tapOn: "Track Quiz"
+- assertVisible: "START QUIZ"
+#  clicking cross button, it does not have id or text, so we will use point to click on it
+- tapOn:
+    point: "7%,7%"
+- assertVisible: "Nudge Stories"
+- tapOn: "Delete User"
+- pressKey: Home

@@ -1,0 +1,16 @@
+appId: com.example.nudgetest_demoqa1
+# testing after clicking Track Story in user Identified state, the user is still on the home page
+---
+- clearState
+- launchApp
+- tapOn: "User Identifier"
+- tapOn: "Track Story"
+- assertVisible:
+    id: "android:id/content"
+- assertVisible: "Nudge Stories"
+- assertVisible: "Track Story"
+- assertVisible: "User Identifier"
+- assertVisible: "Track Quiz"
+- assertVisible: "Delete User"
+- tapOn: "Delete User"
+- pressKey: Home

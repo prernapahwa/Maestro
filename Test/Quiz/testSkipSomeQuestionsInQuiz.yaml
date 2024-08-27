@@ -1,0 +1,21 @@
+appId: com.example.nudgetest_demoqa1
+# testing that when we skip some questions in the quiz, the user is still able to complete the quiz
+---
+- clearState
+- launchApp
+- tapOn: "User Identifier"
+- tapOn: "Track Quiz"
+- tapOn: "START QUIZ"
+- repeat:
+    times: 0
+    commands:
+      - tapOn:
+          point: "50%,63%"
+- extendedWaitUntil:
+    visible: "BACK TO HOME"
+    timeout: 100000
+- assertVisible: "MY REWARDS"
+- assertTrue: "Quiz Completed"
+- tapOn: "BACK TO HOME"
+- tapOn: "Delete User"
+- pressKey: Home
