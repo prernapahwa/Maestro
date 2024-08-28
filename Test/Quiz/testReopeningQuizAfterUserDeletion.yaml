@@ -6,6 +6,7 @@ appId: com.example.nudgetest_demoqa1
 - tapOn: "User Identifier"
 - tapOn: "Track Quiz"
 - assertVisible: "START QUIZ"
+#  clicking cross button to exit quiz page
 - tapOn:
     point: "7%,7%"
 - assertVisible: "Nudge Stories"
