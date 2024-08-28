@@ -1,0 +1,8 @@
+appId: com.example.nudgetest_demoqa1
+# testing quiz when user is not identified
+---
+- clearState
+- launchApp
+- tapOn: "Track Quiz"
+- assertNotVisible: "START QUIZ"
+- pressKey: Home
